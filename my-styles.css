@@ -1,0 +1,345 @@
+/* Styling for the whole body (ROOT ELEMENTS) */
+:root {
+    /* THE PRIMARY COLORS */
+    --try-it-clr: hsl(321, 100%, 78%);
+    --start-sub-btn-clr: hsl(322, 100%, 66%);
+    --other-color: hsl(0, 100%, 63%);
+}
+
+/* These are my variables */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* margin: 20px; */
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* WHAT CONTAINS ALL OUR CONTENTS FROM THE HEADER TO THE BODY */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* First, the Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.logo-image {
+    height: 20px;
+}
+
+.try-it-btn {
+    background: none;
+    border: 1px solid var(--try-it-clr);
+    color: var(--try-it-clr);
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+/* THE NEXT SECTION - THE BODY SECTION */
+section.body {
+    text-align: center;
+}
+
+.body-header,
+.header-text {
+    padding: 0 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.body-text {
+    font-size: 1.2rem;
+    padding: 0 50px;
+    margin-bottom: 40px;
+}
+
+.start {
+    background: var(--start-sub-btn-clr);
+    color: white;
+    font-weight: 600;
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* THE IMAGE CONTAINER */
+.bg-img1,
+.bg-img2,
+.bg-img3,
+.bg-img4 {
+    overflow: hidden;
+}
+
+/* THE FIRST IMAGE */
+.first-picture {
+    max-height: 500px;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+
+/* STATISTICS SECTION */
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.stats1,
+.stats2 {
+    font-size: 2rem;
+}
+
+/* Scaling images and text according to parent's font-size */
+.stats-icon img {}
+
+.stats-value {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.stats-text {
+    font-size: 0.7em;
+}
+
+/* THE COLLAPSED TEXT IN MOBILE VIEW */
+.col-text {
+    padding: 0 180px;
+}
+
+/* ALL PICTURE-SIDE BACKGROUND SECTION */
+.background-images {
+    max-height: 500px;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.grow-together,
+.flowing-convo,
+.your-users {
+    background-image: url(/images);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+}
+
+/* The Second, third and fourth Image */
+.grow-together-header,
+.flowing-convo-header,
+.your-users-header {
+    font-size: 1.5rem;
+    margin-left: 50px;
+}
+
+.grow-together-text,
+.flowing-convo-text,
+.your-users-text {
+    padding: 0 50px;
+    font-size: 1.2rem;
+}
+
+/* FINAL SECTION */
+/* .flowing-convo {} */
+.build-community {
+    text-align: center;
+    padding: 10px 20px;
+    margin: 40px 30px;
+}
+
+/* ALL FOR THE MAIN SECTION */
+
+/* WE MOVE TO THE FOOTER */
+/* THE FOOTER SECTION */
+footer {
+    display: grid;
+    gap: 5rem;
+    background: hsl(192, 100%, 9%);
+    padding: 20px;
+    /* margin: 0; */
+    color: hsl(0, 10%, 90%);
+    margin-top: 30px;
+}
+
+/* EACH SECTIONS IN THE FOOTER */
+.footer-section1,
+.footer-section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.footer-section-text {
+    max-width: 400px;
+}
+
+/* THE FORM DISPLAY */
+form {
+    /* display: flex; */
+    flex-direction: column;
+}
+
+input[type="email"] {
+    --padding: 10px 60px;
+    padding: var(--padding);
+    border-radius: 5px;
+    border: 0;
+}
+
+.sub-btn {
+    background-color: var(--start-sub-btn-clr);
+    color: white;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 30px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+
+}
+
+
+/* The Logo-Icon */
+.footer-logo {
+    filter: grayscale(1);
+    /* color: white; */
+}
+
+/* to space the normal icons away from their text */
+.icon-items span {
+    margin-right: 12px;
+}
+
+/* THE ICONS (each of them) */
+.social-icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* .social-icons img {
+} */
+/* THE ICONS */
+.social-icons svg {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+
+/* RESPONSIVE CSS */
+/* FOR LAPTOP VIEW */
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    /* The body Section */
+    .body-header {
+        font-size: 2rem;
+    }
+
+    .body-text {
+        padding: 0 250px;
+    }
+
+    /* The First Picture */
+    /* The Picture container */
+    .bg-img1 {
+        margin: 0 50px;
+    }
+
+    /* Statistics Section */
+    .statistics {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* expanding collapsed-text in statistics section */
+    .col-text {
+        padding: 0;
+    }
+
+    /* All the Media Query Styling for the remianing sections (except footer) */
+    .background-images {
+        object-fit: scale-down;
+        max-height: 200px;
+    }
+
+    /* The side-to-side styling with grid for each section */
+    .grid-maker {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-maker:nth-of-type(2n) .details {
+        /* background-color: red; */
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .grid-maker:nth-of-type(2n) .image-span {
+        grid-column: 2 /3;
+    }
+
+    /* ALIGNING HEADERS IN THIS REMAINING SECTION */
+    .grow-together,
+    .flowing-convo,
+    .your-users {
+        text-align: left;
+    }
+
+    /* .grow-together,
+    .flowing-convo,
+    .your-users {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* INDIVIDUAL MOVEMENT TO VARIOUS PROPER POSITION */
+    /* .grow-together-header,
+    .your-users-header {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .flowing-convo-text {
+        grid-column: 2 /3;
+        grid-row: 2 / 3;
+    }
+
+    /* MAKING MY IMAGES SPAN TO FULL LENGTH */
+    /* .img-2,
+    .img-4 {
+        grid-row: 1 / 3;
+    } */
+
+    /* THE FOOTER */
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-section1 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .footer-section2 {
+        grid-column: 1 / 2;
+    }
+}
