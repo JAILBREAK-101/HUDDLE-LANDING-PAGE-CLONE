@@ -11,5 +11,3 @@ Technologies used to build this:
 3. JavaScript (Vanilla)
 
 ## Update the profiles, for views
-
-Live Link to Project:
