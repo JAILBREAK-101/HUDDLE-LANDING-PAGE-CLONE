@@ -55,10 +55,6 @@ section.body {
     margin-bottom: 25px;
 }
 
-.header-text {
-    max-width: 50ch;
-}
-
 .body-header,
 .header-text {
     padding: 0 20px;
@@ -152,6 +148,7 @@ section.body {
     flex-direction: column;
     text-align: center;
     gap: 1.2rem;
+    margin: 20px;
 }
 
 /* The Second, third and fourth Image */
@@ -159,6 +156,7 @@ section.body {
 .flowing-convo-header,
 .your-users-header {
     font-size: 1.5rem;
+    padding: 0 50px;
 }
 
 .grow-together-text,
@@ -209,11 +207,12 @@ form {
 }
 
 input[type="email"] {
-    --padding: 10px 60px;
+    --padding: 10px;
     padding: var(--padding);
     border-radius: 5px;
     margin-bottom: 10px;
     border: 0;
+    /* max-width: 600px; */
 }
 
 .sub-btn {
@@ -330,5 +329,15 @@ input[type="email"] {
 
     .footer-section2 {
         grid-column: 1 / 2;
+    }
+
+    form {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    input[type="email"] {
+        margin: 0;
     }
 }
