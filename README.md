@@ -9,7 +9,3 @@ Technologies used to build this:
 1. HTML
 2. CSS (Plain)
 3. JavaScript (Vanilla)
-
-## Update the profiles, for views
-
-Live Link to Project:
