@@ -52,24 +52,18 @@ header {
 /* THE NEXT SECTION - THE BODY SECTION */
 section.body {
     text-align: center;
-    margin-bottom: 25px;
-}
-
-.header-text {
-    max-width: 50ch;
 }
 
 .body-header,
 .header-text {
-    padding: 0 20px;
-    font-size: 25px;
-    font-weight: 800;
-    /* max-width: 60ch; */
+    padding: 0 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .body-text {
-    font-size: 16px;
-    padding: 0 10px;
+    font-size: 1.2rem;
+    padding: 0 50px;
     margin-bottom: 40px;
 }
 
@@ -104,32 +98,25 @@ section.body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
+    text-align: center;
+    gap: 2rem;
 }
 
-/* Each stats */
-.stats {
+.stats1,
+.stats2 {
     font-size: 2rem;
 }
 
 /* Scaling images and text according to parent's font-size */
-.stats-icon img {
-    height: 50px;
-    width: 50px;
-    object-fit: scale-down;
-}
 
 .stats-value {
     font-size: 2em;
-    font-weight: 700;
-    margin: 0;
+    font-weight: 600;
 }
 
 .stats-text {
-    font-size: 0.6em;
+    font-size: 0.7em;
     display: inline;
-    color: var();
-    text-align: center;
 }
 
 /* THE COLLAPSED TEXT IN MOBILE VIEW */
@@ -159,6 +146,7 @@ section.body {
 .flowing-convo-header,
 .your-users-header {
     font-size: 1.5rem;
+    margin-left: 50px;
 }
 
 .grow-together-text,
@@ -173,7 +161,7 @@ section.body {
 .build-community {
     text-align: center;
     padding: 10px 20px;
-    margin: 40px 0;
+    margin: 40px 30px;
 }
 
 /* ALL FOR THE MAIN SECTION */
@@ -195,7 +183,7 @@ footer {
 .footer-section2 {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 0.2em;
 }
 
 .footer-section-text {
@@ -204,7 +192,7 @@ footer {
 
 /* THE FORM DISPLAY */
 form {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
 }
 
@@ -212,7 +200,6 @@ input[type="email"] {
     --padding: 10px 60px;
     padding: var(--padding);
     border-radius: 5px;
-    margin-bottom: 10px;
     border: 0;
 }
 
@@ -223,7 +210,9 @@ input[type="email"] {
     border: 0;
     border-radius: 5px;
     padding: 10px 30px;
-    align-self: flex-end;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+
 }
 
 
@@ -234,12 +223,6 @@ input[type="email"] {
 }
 
 /* to space the normal icons away from their text */
-.icon-items {
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-    margin-bottom: 10px;
-}
-
 .icon-items span {
     margin-right: 12px;
 }
@@ -247,9 +230,11 @@ input[type="email"] {
 /* THE ICONS (each of them) */
 .social-icons {
     display: flex;
-    gap: 0.9rem;
+    gap: 0.5rem;
 }
 
+/* .social-icons img {
+} */
 /* THE ICONS */
 .social-icons svg {
     width: 20px;
@@ -317,6 +302,31 @@ input[type="email"] {
     .your-users {
         text-align: left;
     }
+
+    /* .grow-together,
+    .flowing-convo,
+    .your-users {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* INDIVIDUAL MOVEMENT TO VARIOUS PROPER POSITION */
+    /* .grow-together-header,
+    .your-users-header {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .flowing-convo-text {
+        grid-column: 2 /3;
+        grid-row: 2 / 3;
+    }
+
+    /* MAKING MY IMAGES SPAN TO FULL LENGTH */
+    /* .img-2,
+    .img-4 {
+        grid-row: 1 / 3;
+    } */
 
     /* THE FOOTER */
     footer {
